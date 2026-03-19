@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GameStore.Api.DTOS;
 
-public record  CreateGameDto
+public record  UpdateGameDto
 (
 [Required][StringLength(50)]string Name,
 [Required][StringLength(20)]string Genre,
