@@ -1,29 +1,42 @@
 GET http://localhost:5217/games
 
 ###
-GET http://localhost:5217/games/1
-
+GET http://localhost:5217/games/3
 ###
 POST http://localhost:5217/games
 Content-Type: application/json
 
 {
     "name":"Super Mario",
-    "genre":"Platformer",
-    "price":"555",
+    "genreId":3,
+    "price":"55",
     "releaseDate":"2023-10-20"
 }
 
 ###
-PUT http://localhost:5217/games/10
+POST http://localhost:5217/games
+Content-Type: application/json
+
+{
+    "name":"Street Fighter",
+    "genreId":1,
+    "price":"10",
+    "releaseDate":"2013-10-20"
+}
+
+###
+PUT http://localhost:5217/games/2
 Content-Type: application/json
 
  {
-    "name": "GTA VI",
-    "genre": "Action",
-    "price": 100.00,
-    "releaseDate": "2013-06-23"
+    "name":"Street Fighter II Turbo",
+    "genreId":1,
+    "price":"20",
+    "releaseDate":"2013-10-20"
   }
  
 ###
-DELETE http://localhost:5217/games/1
+DELETE http://localhost:5217/games/3
+
+###
+GET http://localhost:5217/genres
